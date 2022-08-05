@@ -32,7 +32,7 @@ it('should yield NaN if at least one invalid number is provided', () => {
     expect(result).toBeNaN();
 })
 
-it('shoule return a sum if a numberic string is provided', () => {
+it('should return a sum if a numberic string is provided', () => {
     // Arrange
     const inputs = ['2', '4'];
 
