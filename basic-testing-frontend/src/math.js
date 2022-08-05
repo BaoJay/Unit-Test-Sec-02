@@ -1,3 +1,5 @@
+import { validateInput } from './util/validation.js'
+
 export function add(numbers) {
   let sum = 0;
 
@@ -8,11 +10,15 @@ export function add(numbers) {
   return sum;
 }
 
-// export function add(...numbers) {
-//   let sum = 0;
+export function calculateResult(numberInputs) {
+  let result = '';
+  try {
+    // return an array of numbers
+    const numbers = validateInput(numberInputs);
+    result = add(numbers).toString();
 
-//   console.log(numbers)
-//   sum = numbers.reduce((a, b) => a + b, 0);
-//   console.log(sum)
-//   return sum;
-// }
+  } catch (error) {
+    result = error.message;
+  }
+  return result;
+}

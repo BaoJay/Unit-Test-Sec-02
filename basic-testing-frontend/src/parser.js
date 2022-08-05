@@ -7,3 +7,8 @@ export function extractNumbers(formData) {
   return [num1Input, num2Input];
 }
 
+export function transformInput(form) {
+  const formData = new FormData(form); // New JS object
+  const numberInputs = extractNumbers(formData); // return an array of input numbers
+  return numberInputs;
+}
