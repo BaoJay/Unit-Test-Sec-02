@@ -1,5 +1,5 @@
 import { it, expect, describe } from 'vitest'
-import { outputResult, generateResult } from './output.js'
+import { generateResult } from './output.js'
 
 describe('generateResult()', () => {
     it('should return a string, with any values passed in', () => {
@@ -17,6 +17,6 @@ describe('generateResult()', () => {
     })
 })
 
-describe('outputResult()', () => {
+// describe('outputResult()', () => {
 
-})
+// })

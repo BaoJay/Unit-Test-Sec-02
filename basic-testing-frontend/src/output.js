@@ -1,15 +1,15 @@
-export function outputResult(resultInput) {
+export function generateResult(resultInput) {
     let resultText = '';
-    if (result === 'invalid') {
+    if (resultInput === 'invalid') {
         resultText = 'Invalid input. You must enter valid numbers.';
-    } else if (result !== 'no-calc') {
+    } else if (resultInput !== 'no-calc') {
         resultText = 'Result: ' + resultInput;
     }
 
     return resultText;
 }
 
-export function generateResult(resultText) {
+export function outputResult(resultText) {
     const output = document.getElementById('result');
     output.textContent = resultText;
 }

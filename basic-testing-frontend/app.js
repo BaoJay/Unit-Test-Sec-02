@@ -14,10 +14,10 @@ function formSubmitHandler(event) {
   const result = calculateResult(numberInputs);
 
   // 4. Take the output text
-  const resultText = outputResult(result);
+  const resultText = generateResult(result);
 
   // 5. Print the output in the DOM
-  generateResult(resultText);
+  outputResult(resultText);
 }
 
 form.addEventListener('submit', formSubmitHandler);
